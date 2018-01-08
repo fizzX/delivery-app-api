@@ -1,0 +1,52 @@
+Objects
+
+Users
+	userID
+	isAdmin
+	isBusiness
+	name
+	email
+	phone
+	dorm address
+	year
+	password
+	Venmo id
+
+
+Item
+	itemID
+	vendor name
+	price
+	delivery time
+	dimensions
+	weight
+	description
+	stock
+	image
+	star rating
+	Shipping price?
+
+
+Purchases
+	userID
+	itemID
+	Order Date
+	Delivery Date
+	paymentStatus
+	delivery Status
+	shipping address
+
+Methods
+	create new users
+	permissions
+	create new items
+	create new purchase history
+	create orders	
+	set payment/delivery status
+	update user info
+	update item info
+	
+
+HTTP
+
+
