@@ -8,7 +8,6 @@ const itemSchema = new Schema({
     url: String,
     tags: [String],
     quantity: Number, 
-    views: Number,
     businessId: { type: Schema.ObjectId, ref: 'User' }
   },
   {

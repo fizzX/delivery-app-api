@@ -1,27 +1,28 @@
 {
-  "name": "coupon-api",
+  "name": "delivery-app-api",
   "version": "1.0.0",
-  "description": "API for our Crimson Coupon app",
+  "description": "API for our Crimson Dorm Deliveries app",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "mongo": "mongod -f ./models/mongod.conf"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nputnam-hu/coupon-api.git"
+    "url": "git+https://github.com/fizzX/delivery-app-api.git"
   },
-  "author": "Noah Putnam",
+  "author": "William Drew",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nputnam-hu/coupon-api/issues"
+    "url": "https://github.com/fizzX/delivery-app-api/issues"
   },
-  "homepage": "https://github.com/nputnam-hu/coupon-api#readme",
+  "homepage": "https://github.com/fizzX/delivery-app-api#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mongoose": "^4.13.9",
     "morgan": "^1.9.0",
+    "nodemon": "^1.14.10",
     "path": "^0.12.7"
   }
 }

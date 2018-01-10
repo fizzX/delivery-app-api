@@ -7,9 +7,8 @@ const userSchema = new Schema({
     name: String,
     phoneProvider: String,
     phoneNumber: String,
-    preferences: [String],
+    orders: [String],
     classYear: Number,
-    isBusiness: Boolean,
     isAdmin: Boolean
   },
   {
