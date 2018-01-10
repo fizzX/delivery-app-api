@@ -40,14 +40,14 @@ router.route('/items/:name/name')
 * ---- Routes for orders ----
 */
 
-router.route('/orders')
-	.get(orders.getAllOrders)
-	.post(orders.createOrder)
+// router.route('/orders')
+// 	.get(orders.getAllOrders)
+// 	.post(orders.createOrder)
 
-router.route('/orders/:orderId/id')
-	.get(orders.getOrderById)
-	.delete(orders.deleteOrder)
-	.put(orders.updateOrder)	
+// router.route('/orders/:orderId/id')
+// 	.get(orders.getOrderById)
+// 	.delete(orders.deleteOrder)
+// 	.put(orders.updateOrder)	
 
 
 

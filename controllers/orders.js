@@ -1,5 +1,6 @@
 const Order = require('../models/schemas/order')
-
+const Item = require('../models/schemas/item')
+const User = require('../models/schemas/user')
 /*
 * CRUD Controllers
 */
@@ -25,6 +26,8 @@ exports.createOrder = (req, res, next) => {
     	isPaid: req.body.isPaid,
     	isDelivered: false,
   	}
+
+  	User.findByIdAndUpdate({ _id: req.body.customerId }, { $push: {"orders": orderData }})
   	const newOrder = new Order(orderData)
   	newOrder.save((err) => {
     	if (err) return next(err)
